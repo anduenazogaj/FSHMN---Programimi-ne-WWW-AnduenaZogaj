@@ -1,0 +1,74 @@
+/*
+   DIAGNOSTIKIMI I GABIMEVE
+
+/*
+GABIMI 1 – KONFLIKT SPECIFIKE
+
+#poster dhe .poster vendosin të dyja ngjyrën e tekstit.
+
+#poster është ID selector.
+.poster është CLASS selector.
+
+ID ka specifikë më të madhe se CLASS,
+prandaj #poster fiton në kaskadë.
+
+Problemi është se #poster vendos:
+color: white;
+background: white;
+
+Pra teksti i bardhë vendoset mbi sfond të bardhë
+dhe bëhet i vështirë për t'u lexuar.
+*/
+
+/*
+#poster {
+  color: white;
+  background: white;
+}
+*/
+
+/*
+.poster {
+  color: #17263c;
+}
+*/
+
+
+/*
+GABIMI 2 – TEJKALIMI I GJERËSISË
+
+width: 700px dhe padding: 80px mund të bëjnë
+që elementi të dalë jashtë ekranit në pajisje
+me gjerësi 360px.
+
+Zgjidhja është përdorimi i:
+width: 100%;
+max-width;
+box-sizing: border-box;
+
+Kështu elementi përshtatet me madhësinë e ekranit.
+*/
+
+/*
+#poster {
+  width: 700px;
+  padding: 80px;
+}
+*/
+
+
+/* 
+   VERSIONI I RREGULLUAR
+   */
+
+.poster {
+  width: 100%;
+  max-width: 700px;
+
+  padding: 2rem;
+
+  color: #17263c;
+  background: white;
+
+  box-sizing: border-box;
+}
